@@ -23,7 +23,7 @@ public class MainActivity extends ActionBarActivity {
 
 
         final ImageView imageV = (ImageView) findViewById(R.id.imageView);
-        imageV.setBackgroundResource(R.drawable.c);
+        imageV.setImageResource(R.drawable.c);
 
         ////////All the white keys////////////
         //Play C5
@@ -35,8 +35,7 @@ public class MainActivity extends ActionBarActivity {
                 Log.v(TAG, "Playing C5");
                 c5.start();
                 Log.v(TAG, "Show C");
-                imageV.setBackgroundResource(R.drawable.c);
-
+                imageV.setImageResource(R.drawable.c);
             }
         });
 
@@ -48,7 +47,7 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing D5");
                 d5.start();
-                imageV.setBackgroundResource(R.drawable.d);
+                imageV.setImageResource(R.drawable.d);
             }
         });
 
@@ -60,7 +59,7 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing E5");
                 e5.start();
-                imageV.setBackgroundResource(R.drawable.e);
+                imageV.setImageResource(R.drawable.e);
             }
         });
 
@@ -72,7 +71,7 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing F5");
                 f5.start();
-                imageV.setBackgroundResource(R.drawable.f);
+                imageV.setImageResource(R.drawable.f);
             }
         });
 
@@ -84,7 +83,7 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing G5");
                 g5.start();
-                imageV.setBackgroundResource(R.drawable.g);
+                imageV.setImageResource(R.drawable.g);
             }
         });
 
@@ -96,7 +95,7 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing A5");
                 a5.start();
-                imageV.setBackgroundResource(R.drawable.a);
+                imageV.setImageResource(R.drawable.a);
             }
         });
 
@@ -108,7 +107,7 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing B5");
                 b5.start();
-                imageV.setBackgroundResource(R.drawable.b);
+                imageV.setImageResource(R.drawable.b);
             }
         });
 
@@ -120,7 +119,7 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing C6");
                 c6.start();
-                imageV.setBackgroundResource(R.drawable.c);
+                imageV.setImageResource(R.drawable.c);
             }
         });
 
@@ -132,7 +131,7 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing D6");
                 d6.start();
-                imageV.setBackgroundResource(R.drawable.d);
+                imageV.setImageResource(R.drawable.d);
             }
         });
 
@@ -144,7 +143,7 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing E6");
                 e6.start();
-                imageV.setBackgroundResource(R.drawable.e);
+                imageV.setImageResource(R.drawable.e);
             }
         });
 
@@ -157,7 +156,7 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing CS5");
                 cs5.start();
-                imageV.setBackgroundResource(R.drawable.cs);
+                imageV.setImageResource(R.drawable.cs);
             }
         });
 
@@ -169,7 +168,7 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing DS5");
                 ds5.start();
-                imageV.setBackgroundResource(R.drawable.ds);
+                imageV.setImageResource(R.drawable.ds);
             }
         });
 
@@ -181,7 +180,7 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing FS5");
                 fs5.start();
-                imageV.setBackgroundResource(R.drawable.fs);
+                imageV.setImageResource(R.drawable.fs);
             }
         });
 
@@ -193,7 +192,7 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing GS5");
                 gs5.start();
-                imageV.setBackgroundResource(R.drawable.gs);
+                imageV.setImageResource(R.drawable.gs);
             }
         });
 
@@ -205,7 +204,7 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing AS5");
                 as5.start();
-                imageV.setBackgroundResource(R.drawable.as);
+                imageV.setImageResource(R.drawable.as);
             }
         });
 
@@ -217,7 +216,7 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing CS6");
                 cs6.start();
-                imageV.setBackgroundResource(R.drawable.cs);
+                imageV.setImageResource(R.drawable.cs);
             }
         });
 
@@ -229,7 +228,7 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing DS6");
                 ds6.start();
-                imageV.setBackgroundResource(R.drawable.ds);
+                imageV.setImageResource(R.drawable.ds);
             }
         });
 

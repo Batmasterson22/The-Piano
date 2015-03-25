@@ -5,6 +5,17 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="135dp"
+        android:layout_height="130dp"
+        android:id="@+id/imageView"
+        android:contentDescription="@string/note"
+        android:background="@drawable/c"
+        android:src="@drawable/c"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/button10"
+        android:layout_alignEnd="@+id/button10" />
+
     <Button
         android:layout_width="55dp"
         android:layout_height="wrap_content"
@@ -77,13 +88,13 @@
 
     <Button
         android:layout_width="55dp"
-        android:layout_height="wrap_content"
+        android:layout_height="135dp"
         android:id="@+id/button8"
         android:background="@drawable/btn_keys"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/button7"
         android:layout_toEndOf="@+id/button7"
-        android:layout_alignTop="@+id/button7" />
+        android:layout_alignBottom="@+id/button7" />
 
     <Button
         android:layout_width="55dp"
@@ -154,13 +165,13 @@
 
     <Button
         android:layout_width="50dp"
-        android:layout_height="190dp"
+        android:layout_height="75dp"
         android:id="@+id/button16"
         android:background="@drawable/btn_black"
-        android:layout_alignTop="@+id/button15"
         android:layout_alignStart="@+id/button8"
         android:layout_marginLeft="30dp"
-        android:layout_marginStart="27dp" />
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="118dp" />
 
     <Button
         android:layout_width="50dp"
@@ -169,15 +180,7 @@
         android:background="@drawable/btn_black"
         android:layout_alignBottom="@+id/button16"
         android:layout_toEndOf="@+id/button16"
-        android:layout_marginLeft="5dp" />
-
-    <ImageView
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:id="@+id/imageView"
-        android:contentDescription="@string/note"
-        android:background="@drawable/c"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="215dp" />
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="118dp" />
 
 </RelativeLayout>

@@ -107,7 +107,7 @@
 
     <Button
         android:layout_width="50dp"
-        android:layout_height="200dp"
+        android:layout_height="190dp"
         android:id="@+id/button11"
         android:background="@drawable/btn_black"
         android:layout_marginLeft="29dp"
@@ -117,7 +117,7 @@
 
     <Button
         android:layout_width="50dp"
-        android:layout_height="200dp"
+        android:layout_height="190dp"
         android:id="@+id/button12"
         android:background="@drawable/btn_black"
         android:layout_toEndOf="@+id/button11"
@@ -126,7 +126,7 @@
 
     <Button
         android:layout_width="50dp"
-        android:layout_height="200dp"
+        android:layout_height="190dp"
         android:id="@+id/button13"
         android:background="@drawable/btn_black"
         android:layout_toEndOf="@+id/button12"
@@ -135,7 +135,7 @@
 
     <Button
         android:layout_width="50dp"
-        android:layout_height="200dp"
+        android:layout_height="190dp"
         android:id="@+id/button14"
         android:background="@drawable/btn_black"
         android:layout_toEndOf="@+id/button13"
@@ -154,7 +154,7 @@
 
     <Button
         android:layout_width="50dp"
-        android:layout_height="200dp"
+        android:layout_height="190dp"
         android:id="@+id/button16"
         android:background="@drawable/btn_black"
         android:layout_alignTop="@+id/button15"
@@ -170,5 +170,14 @@
         android:layout_alignBottom="@+id/button16"
         android:layout_toEndOf="@+id/button16"
         android:layout_marginLeft="5dp" />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/imageView"
+        android:contentDescription="@string/note"
+        android:background="@drawable/c"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="215dp" />
 
 </RelativeLayout>

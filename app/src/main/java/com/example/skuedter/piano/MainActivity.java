@@ -1,5 +1,6 @@
 package com.example.skuedter.piano;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -123,29 +124,6 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-        //Play D6
-        final MediaPlayer d6 = MediaPlayer.create(this, R.raw.d6);
-        Button play_d6 = (Button)this.findViewById(R.id.button9);
-        play_d6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.v(TAG, "Playing D6");
-                d6.start();
-                imageV.setImageResource(R.drawable.d);
-            }
-        });
-
-        //Play E6
-        final MediaPlayer e6 = MediaPlayer.create(this, R.raw.e6);
-        Button play_e6 = (Button)this.findViewById(R.id.button10);
-        play_e6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.v(TAG, "Playing E6");
-                e6.start();
-                imageV.setImageResource(R.drawable.e);
-            }
-        });
 
         ////////All the black keys////////////
         //Play CS5
@@ -208,30 +186,15 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-        //Play CS6
-        final MediaPlayer cs6 = MediaPlayer.create(this, R.raw.cs6);
-        Button play_cs6 = (Button)this.findViewById(R.id.button16);
-        play_cs6.setOnClickListener(new View.OnClickListener() {
+        Button playnow = (Button)this.findViewById(R.id.btn_playnow);
+        playnow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.v(TAG, "Playing CS6");
-                cs6.start();
-                imageV.setImageResource(R.drawable.cs);
+                Log.v(TAG, "Change Activity");
+                Intent myIntent = new Intent(getBaseContext(), GameActivity.class);
+                startActivity(myIntent);
             }
         });
-
-        //Play DS6
-        final MediaPlayer ds6 = MediaPlayer.create(this, R.raw.ds6);
-        Button play_ds6 = (Button)this.findViewById(R.id.button17);
-        play_ds6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.v(TAG, "Playing DS6");
-                ds6.start();
-                imageV.setImageResource(R.drawable.ds);
-            }
-        });
-
 
 
     }

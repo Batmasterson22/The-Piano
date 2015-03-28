@@ -1,6 +1,5 @@
 package com.example.skuedter.piano;
 
-import android.content.Intent;
 import android.media.MediaPlayer;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -50,7 +49,7 @@ public class GameActivity extends ActionBarActivity {
 
 
         final ImageView imageV = (ImageView) findViewById(R.id.imageView);
-        imageV.setImageResource(R.drawable.c);
+        imageV.setImageResource(R.drawable.startbattle);
 
         ////////All the white keys////////////
         //Play C5
@@ -61,8 +60,6 @@ public class GameActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing C5");
                 c5.start();
-                Log.v(TAG, "Show C");
-                imageV.setImageResource(R.drawable.c);
 
                 if (toSave)
                 {
@@ -86,7 +83,6 @@ public class GameActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing D5");
                 d5.start();
-                imageV.setImageResource(R.drawable.d);
 
                 if (toSave)
                 {
@@ -110,7 +106,6 @@ public class GameActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing E5");
                 e5.start();
-                imageV.setImageResource(R.drawable.e);
 
                 if (toSave)
                 {
@@ -134,7 +129,6 @@ public class GameActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing F5");
                 f5.start();
-                imageV.setImageResource(R.drawable.f);
 
                 if (toSave)
                 {
@@ -158,7 +152,6 @@ public class GameActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing G5");
                 g5.start();
-                imageV.setImageResource(R.drawable.g);
 
                 if (toSave)
                 {
@@ -182,7 +175,6 @@ public class GameActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing A5");
                 a5.start();
-                imageV.setImageResource(R.drawable.a);
 
                 if (toSave)
                 {
@@ -206,7 +198,6 @@ public class GameActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing B5");
                 b5.start();
-                imageV.setImageResource(R.drawable.b);
 
                 if (toSave)
                 {
@@ -230,7 +221,6 @@ public class GameActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing C6");
                 c6.start();
-                imageV.setImageResource(R.drawable.c);
 
                 if (toSave)
                 {
@@ -256,7 +246,6 @@ public class GameActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing CS5");
                 cs5.start();
-                imageV.setImageResource(R.drawable.cs);
 
                 if (toSave)
                 {
@@ -280,7 +269,6 @@ public class GameActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing DS5");
                 ds5.start();
-                imageV.setImageResource(R.drawable.ds);
 
                 if (toSave)
                 {
@@ -304,7 +292,6 @@ public class GameActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing FS5");
                 fs5.start();
-                imageV.setImageResource(R.drawable.fs);
 
                 if (toSave)
                 {
@@ -328,7 +315,6 @@ public class GameActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing GS5");
                 gs5.start();
-                imageV.setImageResource(R.drawable.gs);
 
                 if (toSave)
                 {
@@ -352,7 +338,6 @@ public class GameActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Log.v(TAG, "Playing AS5");
                 as5.start();
-                imageV.setImageResource(R.drawable.as);
 
                 if (toSave)
                 {
@@ -378,12 +363,14 @@ public class GameActivity extends ActionBarActivity {
                 {
                     count = 0;
                     toSave = true;
+                    imageV.setImageResource(R.drawable.beginbattle);
                 }
                 else
                 {
                     toSave = false;
                     toCheck = true;
                     count = 0;
+                    imageV.setImageResource(R.drawable.challengebattle);
                 }
 
             }

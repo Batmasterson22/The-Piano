@@ -9,18 +9,22 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.Spinner;
 
 
 public class LearningActivity extends ActionBarActivity {
 
     private static final String TAG = "jasonsMessage";
+    private static String scale = "major";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learning);
         Log.i(TAG, "onCreate");
-
+        Spinner spin = (Spinner) findViewById((R.id.spinner));
+        String spinVal = String.valueOf(spin.getSelectedItem());
 
         final ImageView imageV = (ImageView) findViewById(R.id.imageView);
         imageV.setImageResource(R.drawable.c);
@@ -184,6 +188,23 @@ public class LearningActivity extends ActionBarActivity {
                 imageV.setImageResource(R.drawable.as);
             }
         });
+    }
+
+    public void onRadioButtonClicked(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch(view.getId()) {
+            case R.id.radio_major:
+                if (checked)
+                    scale = "major";
+                    break;
+            case R.id.radio_minor:
+                if (checked)
+                    scale = "minor";
+                    break;
+        }
     }
 
 

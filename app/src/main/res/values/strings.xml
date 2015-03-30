@@ -18,5 +18,6 @@
         <item>G</item>
     </string-array>
     <string name="title_activity_learning">LearningActivity</string>
+    <color name="black">#000000</color>
 
 </resources>

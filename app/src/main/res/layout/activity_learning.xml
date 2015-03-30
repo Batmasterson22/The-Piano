@@ -144,4 +144,23 @@
         android:layout_toEndOf="@+id/button14"
         android:layout_marginLeft="6dp" />
 
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="75dp"
+        android:layout_height="55dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/imageView"
+        android:layout_toRightOf="@+id/button8">
+        <RadioButton android:id="@+id/radio_major"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/major"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_minor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minor"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+
 </RelativeLayout>
